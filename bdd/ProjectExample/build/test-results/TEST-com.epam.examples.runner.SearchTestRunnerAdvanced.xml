@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.examples.runner.SearchTestRunnerAdvanced" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-04-11T23:42:09" hostname="lu" time="16.838">
+  <properties/>
+  <testcase name="run" classname="com.epam.examples.runner.SearchTestRunnerAdvanced" time="16.838"/>
+  <system-out><![CDATA[Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=1000,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+
+(AfterStories)
+
+Generating reports view to 'C:\Users\Lili\Desktop\ProjectExample\build\classes\jbehave' using formats '[xml, stats, console, html]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

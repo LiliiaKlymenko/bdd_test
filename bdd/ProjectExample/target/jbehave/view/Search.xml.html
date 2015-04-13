@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Search</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="Search.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">use application functionality</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">verify search window</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="1.1.1 Verify that enter correct value in search field will give search results">
+<step outcome="failed" keyword="FAILED">com.epam.examples.steps.SearchSteps.setupPages()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setupPages (annotated with @BeforeScenario in class com.epam.examples.steps.SearchSteps) failed: org.jbehave.web.selenium.DelegatingWebDriverProvider$DelegateWebDriverNotFound: WebDriver has not been found for this thread.
+Please verify you are using the correct WebDriverProvider, with the appropriate credentials if using remote access, e.g. to SauceLabs: -DSAUCE_USERNAME=xxxxxx -DSAUCE_ACCESS_KEY=xxx-xxxx-xxxx-xxxx-xxx </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given I am on search page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Enter the value in Search field <parameter>whether</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on search button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify the search results</step>
+</scenario>
+<scenario keyword="Scenario:" title="1.1.2 Verify that enter incorrect value in search field will not give any results">
+<step outcome="failed" keyword="FAILED">com.epam.examples.steps.SearchSteps.setupPages()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setupPages (annotated with @BeforeScenario in class com.epam.examples.steps.SearchSteps) failed: org.jbehave.web.selenium.DelegatingWebDriverProvider$DelegateWebDriverNotFound: WebDriver has not been found for this thread.
+Please verify you are using the correct WebDriverProvider, with the appropriate credentials if using remote access, e.g. to SauceLabs: -DSAUCE_USERNAME=xxxxxx -DSAUCE_ACCESS_KEY=xxx-xxxx-xxxx-xxxx-xxx </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given I am on search page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Enter the value in Search field <parameter>---</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on search button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify the message</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
