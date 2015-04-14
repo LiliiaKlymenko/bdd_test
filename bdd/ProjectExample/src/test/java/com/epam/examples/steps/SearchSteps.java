@@ -1,15 +1,12 @@
 package com.epam.examples.steps;
 
+import static org.junit.Assert.assertTrue;
 import com.epam.tests.pages.PageFactory;
 import com.epam.tests.pages.SearchPage;
 import org.jbehave.core.annotations.BeforeScenario;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-
-import static org.junit.Assert.assertTrue;
-
-//Mapping Textual Scenario Steps to Java Methods via annotations
 
 public class SearchSteps {
 
@@ -30,11 +27,6 @@ public class SearchSteps {
         searchPage.open();
     }
 
-        // @When("I have a search results")
-        // {
-        //      assertTrue(searchPage.verifySearchResults());
-        // }
-
     @When("Enter the value in Search field $value")
     public void setSearchParameters(String value) {
         searchPage.typeSearchParameters(value);
@@ -46,7 +38,7 @@ public class SearchSteps {
     }
 
     @When("Select the first result in search field")
-      public void clickFirstResult() {
+    public void clickFirstResult() {
         searchPage.clickFirstResult();
     }
 
@@ -54,7 +46,6 @@ public class SearchSteps {
     public void verifySearchResultShown() {
         assertTrue(searchPage.verifySearchResults());
     }
-
 
     @Then("verify the message")
     public void messageIsShown() {
@@ -65,5 +56,4 @@ public class SearchSteps {
     public void verifyRedirection() {
         assertTrue(searchPage.verifyRedirection());
     }
-
 }
